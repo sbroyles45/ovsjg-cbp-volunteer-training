@@ -321,6 +321,16 @@
   }
   .video-links a { text-decoration: underline dotted; text-underline-offset: 3px; }
 
+  details.ts-collapse { margin: 18px 0 8px; }
+  details.ts-collapse summary { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700; color: var(--slate); cursor: pointer; padding: 2px 0 10px; list-style: revert; }
+  .timestamp-list { list-style: none; margin: 0 0 4px; padding: 0; display: grid; gap: 7px 24px; }
+  .timestamp-list li { display: flex; gap: 10px; font-size: 0.86rem; color: var(--ink); align-items: baseline; }
+  .timestamp-list .ts-time { flex: 0 0 auto; font-variant-numeric: tabular-nums; font-weight: 700; color: var(--red); min-width: 50px; }
+
+  .mat-list.thumb-list li { justify-content: flex-start; align-items: center; }
+  .mat-list.thumb-list img { width: 120px; height: 68px; object-fit: cover; border-radius: 4px; flex: none; }
+  .mat-list.thumb-list a { margin-left: 0; font-size: 0.95rem; }
+
   .pending {
     border: 1px dashed var(--line-strong);
     border-radius: 8px;
@@ -581,6 +591,18 @@
       <div class="video-embed">
         <iframe src="https://www.youtube.com/embed/p5UJW2MOIKU" title="Session 1 recording: Expand Your Team Without Expanding Your Budget" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
       </div>
+      <details class="ts-collapse">
+        <summary>Section Timeline (7)</summary>
+        <ul class="timestamp-list">
+          <li><span class="ts-time">15:09</span><span>Welcome and session overview</span></li>
+          <li><span class="ts-time">24:27</span><span>Meet Serve DC: programs and the volunteer portal</span></li>
+          <li><span class="ts-time">40:04</span><span>Recruitment platforms and the resource guide</span></li>
+          <li><span class="ts-time">45:07</span><span>National days of service</span></li>
+          <li><span class="ts-time">47:25</span><span>University and graduate student pipelines</span></li>
+          <li><span class="ts-time">50:37</span><span>Pro bono legal resources</span></li>
+          <li><span class="ts-time">56:45</span><span>Compass Pro Bono and executive coaching</span></li>
+        </ul>
+      </details>
       <div class="video-links">
         <a href="https://drive.google.com/file/d/1QIQms6CgBjU6wMNxkhUFuFLModgjx5zv/view?usp=sharing">Cleaned transcript, by topic</a>
         <a href="https://drive.google.com/file/d/181RZ55vd6r5psbG7C2YCGoC9CCn_BAY5/view?usp=sharing">Full transcript</a>
@@ -637,6 +659,18 @@
       <div class="video-embed">
         <iframe src="https://www.youtube.com/embed/YX-VL1oFFBs" title="Session 2 recording: From Chaos to Coordinated: Building Your Volunteer Program" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
       </div>
+      <details class="ts-collapse">
+        <summary>Section Timeline (7)</summary>
+        <ul class="timestamp-list">
+          <li><span class="ts-time">0:05</span><span>Welcome and Session 1 recap</span></li>
+          <li><span class="ts-time">7:47</span><span>Today's six steps: the framework overview</span></li>
+          <li><span class="ts-time">18:32</span><span>Touring the platform: worksheets and policy templates</span></li>
+          <li><span class="ts-time">41:00</span><span>Live demo: AI prompt for defining a volunteer role</span></li>
+          <li><span class="ts-time">1:04:12</span><span>The volunteer agreement, confidentiality, and boundaries</span></li>
+          <li><span class="ts-time">1:17:04</span><span>Tracking hours and the ROI case</span></li>
+          <li><span class="ts-time">1:29:08</span><span>Growing your program and closing</span></li>
+        </ul>
+      </details>
       <div class="video-links">
         <a href="https://drive.google.com/file/d/1toDeYzNn5cN6dlKjUjJv25mBd18xVxH6/view?usp=sharing">Cleaned transcript, by topic</a>
         <a href="https://docs.google.com/document/d/1aGv8MowwZnu8G1zWpVDZ5rmbs-ixEV29nNSwyHpYPSM/edit?usp=sharing">Full transcript</a>
@@ -645,14 +679,14 @@
         <summary>Highlight clips (7)
           <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
         </summary>
-        <ul class="mat-list">
-          <li><a href="https://youtu.be/l-Hj6OOrX0U">Defining Your Volunteer Needs</a></li>
-          <li><a href="https://youtu.be/twTOBDXCxyg">How Volunteers Make a Difference in Communities</a></li>
-          <li><a href="https://youtu.be/jDyfZiqSkJY">Retain Volunteers, Follow Up After Events</a></li>
-          <li><a href="https://youtu.be/VlT5bJ04qMA">The Power of Volunteer Hours and ROI</a></li>
-          <li><a href="https://youtu.be/KO4MZ2f4xq4">Volunteer Agreement, Setting Expectations</a></li>
-          <li><a href="https://youtu.be/SdMiahxGrOU">Volunteer Hours Turned into Dollars</a></li>
-          <li><a href="https://youtu.be/SLYlEnldzVs">Volunteer Roles, Direct, Operational, Advocacy</a></li>
+        <ul class="mat-list thumb-list">
+          <li><img src="https://img.youtube.com/vi/twTOBDXCxyg/mqdefault.jpg" alt="" loading="lazy" width="120" height="68"><a href="https://youtu.be/twTOBDXCxyg">How Volunteers Make a Difference in Communities</a></li>
+          <li><img src="https://img.youtube.com/vi/l-Hj6OOrX0U/mqdefault.jpg" alt="" loading="lazy" width="120" height="68"><a href="https://youtu.be/l-Hj6OOrX0U">Defining Your Volunteer Needs</a></li>
+          <li><img src="https://img.youtube.com/vi/SLYlEnldzVs/mqdefault.jpg" alt="" loading="lazy" width="120" height="68"><a href="https://youtu.be/SLYlEnldzVs">Volunteer Roles, Direct, Operational, Advocacy</a></li>
+          <li><img src="https://img.youtube.com/vi/KO4MZ2f4xq4/mqdefault.jpg" alt="" loading="lazy" width="120" height="68"><a href="https://youtu.be/KO4MZ2f4xq4">Volunteer Agreement, Setting Expectations</a></li>
+          <li><img src="https://img.youtube.com/vi/VlT5bJ04qMA/mqdefault.jpg" alt="" loading="lazy" width="120" height="68"><a href="https://youtu.be/VlT5bJ04qMA">The Power of Volunteer Hours and ROI</a></li>
+          <li><img src="https://img.youtube.com/vi/SdMiahxGrOU/mqdefault.jpg" alt="" loading="lazy" width="120" height="68"><a href="https://youtu.be/SdMiahxGrOU">Volunteer Hours Turned into Dollars</a></li>
+          <li><img src="https://img.youtube.com/vi/jDyfZiqSkJY/mqdefault.jpg" alt="" loading="lazy" width="120" height="68"><a href="https://youtu.be/jDyfZiqSkJY">Retain Volunteers, Follow Up After Events</a></li>
         </ul>
       </details>
 
