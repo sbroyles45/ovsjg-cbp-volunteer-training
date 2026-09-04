@@ -429,12 +429,23 @@
     display: flex;
     justify-content: space-between;
     gap: 16px;
-    align-items: baseline;
+    align-items: flex-start;
     flex-wrap: wrap;
   }
   .guide-list li:first-child { border-top: none; }
   .guide-name { font-weight: 500; }
   .guide-desc { display: block; color: var(--slate); font-size: 0.9rem; margin-top: 2px; max-width: 66ch; }
+  details.guide-collapse { flex: 1 1 auto; }
+  details.guide-collapse summary {
+    cursor: pointer; list-style: none; display: flex; align-items: center; gap: 6px;
+  }
+  details.guide-collapse summary::-webkit-details-marker { display: none; }
+  details.guide-collapse summary .chev {
+    width: 14px; height: 14px; flex: none;
+    transition: transform 0.15s ease; color: var(--slate);
+  }
+  details.guide-collapse[open] summary .chev { transform: rotate(90deg); }
+  details.guide-collapse .guide-desc { margin-top: 6px; }
 
   /* ---- contact cards ---- */
   .contact-wrap { display: flex; flex-direction: column; gap: 16px; }
@@ -564,13 +575,23 @@
     <div class="session-card">
       <ul class="guide-list">
         <li>
-          <span><span class="guide-name">DC Nonprofit Volunteer Resource Guide, Part One: Finding Them</span>
-          <span class="guide-desc">Where to recruit general volunteers (Serve DC's portal, AmeriCorps, Idealist, JustServe); the DC-area university and graduate-program pipeline for interns in social work, public health, law, and communications; pro bono legal resources (the DC Bar Pro Bono Center, area law school clinics) and pro bono consulting (Compass Pro Bono and others); board and leadership contacts; national days of service to build a recruitment push around; and how to make an opening visible, from neighborhood platforms to earned media.</span></span>
+          <details class="guide-collapse">
+            <summary>
+              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+              <span class="guide-name">DC Nonprofit Volunteer Resource Guide, Part One: Finding Them</span>
+            </summary>
+            <span class="guide-desc">Where to recruit general volunteers (Serve DC's portal, AmeriCorps, Idealist, JustServe); the DC-area university and graduate-program pipeline for interns in social work, public health, law, and communications; pro bono legal resources (the DC Bar Pro Bono Center, area law school clinics) and pro bono consulting (Compass Pro Bono and others); board and leadership contacts; national days of service to build a recruitment push around; and how to make an opening visible, from neighborhood platforms to earned media.</span>
+          </details>
           <span class="mat-links"><a href="https://drive.google.com/file/d/16Ru6r29_eGF2mlnJPxM6-r5GaMAEF4hg/view?usp=sharing">PDF</a></span>
         </li>
         <li>
-          <span><span class="guide-name">DC Nonprofit Volunteer Resource Guide, Part Two: Building the Program</span>
-          <span class="guide-desc">Sorting your volunteer needs into direct service, operations, and advocacy; writing a role description with the six elements every posting and screening decision depends on; scaling screening and onboarding to the role's risk level, with foundation policies and a volunteer agreement; posting the role, and where; a separate look at interns, stipends, and Federal Work-Study, what's confirmed and what to take to counsel; tracking and valuing volunteer hours with the free Hour Tracking Log template and the verified $54.77/hour DC rate; and sustaining the program through retention, a leadership pipeline, and documentation.</span></span>
+          <details class="guide-collapse">
+            <summary>
+              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+              <span class="guide-name">DC Nonprofit Volunteer Resource Guide, Part Two: Building the Program</span>
+            </summary>
+            <span class="guide-desc">Sorting your volunteer needs into direct service, operations, and advocacy; writing a role description with the six elements every posting and screening decision depends on; scaling screening and onboarding to the role's risk level, with foundation policies and a volunteer agreement; posting the role, and where; a separate look at interns, stipends, and Federal Work-Study, what's confirmed and what to take to counsel; tracking and valuing volunteer hours with the free Hour Tracking Log template and the verified $54.77/hour DC rate; and sustaining the program through retention, a leadership pipeline, and documentation.</span>
+          </details>
           <span class="mat-links"><a href="https://drive.google.com/file/d/1TA0ggd9-Vs95S9M9VrsI9GR93gVCqTDj/view?usp=sharing">PDF</a></span>
         </li>
       </ul>
